@@ -7,7 +7,11 @@ class Solution {
 
            for(var i: nums)
            {
-                hm.put(i,hm.getOrDefault(i,0)+1);
+               if (hm.containsKey(i)) {
+    hm.put(i, hm.get(i) + 1);
+} else {
+    hm.put(i, 1);
+}
            } 
 
 
@@ -32,7 +36,7 @@ class Solution {
             }
             else
             {
-            return -1;
+            return -1;//no swap
     
             }
             }
