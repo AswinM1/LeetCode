@@ -7,7 +7,7 @@ class Solution {
     }
     public void fnc(int n,List<String> ans,int open,int close,String s)
     {
-        if(open==close && open+close==2*n)
+        if(open+close==2*n)
         {
             ans.add(s);
             return;
