@@ -16,7 +16,7 @@ class Solution {
     }
     public boolean isSafe(int row,int col,char arr[][],int n)
     {
-        for(int i=0;i<row;i++)
+        for(int i=0;i<n;i++)
         {
             
 
